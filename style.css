@@ -3,90 +3,102 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background: rgba(25, 0, 255, 0);
+    background: linear-gradient(135deg, #000000 0%, #2c3e50 100%);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
 }
+
 .title {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 1px;
-    justify-content: center;
-    margin: 30px;
-    letter-spacing: 1px;
-    color: rgb(250, 114, 114);
+    margin-bottom: 20px;
+    color: #ffffff; /* White for contrast against black */
+}
 
-}
 .container {
-    padding: 20px;
-    border-radius: 0;
-    background: rgba(255, 0, 0, 0.212);
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
-    box-shadow: 0 5px 7px #0ce9f1;
 }
+
 .todo-list {
     width: 450px;
     padding: 20px;
-    box-shadow: 0 10px 40px cadetblue;
-    background-color: bisque;
+    background: #1a1a1a; /* Dark grey/black background for the todo-list */
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9); /* Darker shadow */
 }
+
 .input-list {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 10px;
 }
-.entered-list{
-    padding: 10px;
-    border: 1px solid rgb(245, 253, 255);
+
+.entered-list {
+    padding: 15px;
+    border: 2px solid #ffffff; /* White border for contrast */
+    border-radius: 5px;
     font-size: 16px;
     outline: none;
+    background-color: #2c3e50; /* Dark input field */
+    color: #ffffff; /* White text inside the input */
 }
+
 .add-list {
-    background-color: linear-gradient(to bottom, #740fc7 0%, #78b9df 100%);
+    background: linear-gradient(to bottom, #000000 0%, #434343 100%); /* Black gradient */
     font-size: 16px;
     outline: none;
     cursor: pointer;
     pointer-events: none;
-    color: rgb(9, 104, 128);
+    color: white;
     border-radius: 5px;
-    border-color: aqua;
     opacity: 0.6;
+    transition: all 0.3s ease;
 }
+
 .add-list.active {
     opacity: 1;
     pointer-events: all;
 }
+
 .list {
-    width: 100%;
     margin-top: 30px;
 }
+
 .item {
     border-radius: 9px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.993);
+    margin-bottom: 15px;
+    background-color: #333333; /* Dark grey for items */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* Dark shadow */
 }
+
 .item p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: rgba(29, 161, 143, 0.986);
-} 
+    font-size: 18px;
+    color: #ffffff; /* White text for better readability */
+}
+
 .item-btn {
     display: flex;
-    gap: 12px;
+    gap: 15px;
     align-items: center;
 }
-.item-btn i{
+
+.item-btn i {
     cursor: pointer;
-    color: rgb(145, 12, 12);
+    color: #ff5f5f;
     font-size: 18px;
 }
